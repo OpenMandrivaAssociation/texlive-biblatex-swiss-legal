@@ -53,3 +53,12 @@ development for future versions.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0alpha-2
++ Revision: 813422
+- Update to latest release.
+- Import texlive-biblatex-swiss-legal
+- Import texlive-biblatex-swiss-legal
+
