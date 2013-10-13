@@ -1,16 +1,16 @@
-# revision 26210
+# revision 31273
 # category Package
 # catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-swiss-legal
-# catalog-date 2012-04-28 17:44:11 +0200
-# catalog-license nosource
-# catalog-version 1.0 alpha
+# catalog-date 2012-12-28 11:19:15 +0100
+# catalog-license lppl1.3
+# catalog-version 1.0.1a
 Name:		texlive-biblatex-swiss-legal
-Version:	1.0alpha
-Release:	2
+Version:	1.0.1a
+Release:	1
 Summary:	Bibliography and citation styles following Swiss legal practice
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-swiss-legal
-License:	NOSOURCE
+License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-swiss-legal.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-swiss-legal.doc.tar.xz
 BuildArch:	noarch
@@ -35,14 +35,19 @@ development for future versions.
 
 #-----------------------------------------------------------------------
 %files
+%{_texmfdistdir}/tex/latex/biblatex-swiss-legal/biblatex-swiss-legal-base.bbx
+%{_texmfdistdir}/tex/latex/biblatex-swiss-legal/biblatex-swiss-legal-base.cbx
+%{_texmfdistdir}/tex/latex/biblatex-swiss-legal/biblatex-swiss-legal-bibliography.bbx
+%{_texmfdistdir}/tex/latex/biblatex-swiss-legal/biblatex-swiss-legal-bibliography.cbx
 %{_texmfdistdir}/tex/latex/biblatex-swiss-legal/biblatex-swiss-legal-fr.lbx
 %{_texmfdistdir}/tex/latex/biblatex-swiss-legal/biblatex-swiss-legal-general.bbx
 %{_texmfdistdir}/tex/latex/biblatex-swiss-legal/biblatex-swiss-legal-general.cbx
+%{_texmfdistdir}/tex/latex/biblatex-swiss-legal/biblatex-swiss-legal-longarticle.bbx
+%{_texmfdistdir}/tex/latex/biblatex-swiss-legal/biblatex-swiss-legal-longarticle.cbx
 %doc %{_texmfdistdir}/doc/latex/biblatex-swiss-legal/README
 %doc %{_texmfdistdir}/doc/latex/biblatex-swiss-legal/biblatex-swiss-legal.pdf
+%doc %{_texmfdistdir}/doc/latex/biblatex-swiss-legal/doc_source/biblatex-swiss-legal.bib
 %doc %{_texmfdistdir}/doc/latex/biblatex-swiss-legal/doc_source/biblatex-swiss-legal.tex
-%doc %{_texmfdistdir}/doc/latex/biblatex-swiss-legal/doc_source/biblioinstructions.bib
-%doc %{_texmfdistdir}/doc/latex/biblatex-swiss-legal/doc_source/listerevuesCH.tex
 
 #-----------------------------------------------------------------------
 %prep
@@ -53,12 +58,3 @@ development for future versions.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0alpha-2
-+ Revision: 813422
-- Update to latest release.
-- Import texlive-biblatex-swiss-legal
-- Import texlive-biblatex-swiss-legal
-
