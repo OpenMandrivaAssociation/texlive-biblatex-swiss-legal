@@ -1,12 +1,12 @@
-# revision 31273
+# revision 32750
 # category Package
 # catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-swiss-legal
-# catalog-date 2012-12-28 11:19:15 +0100
+# catalog-date 2014-01-21 12:42:17 +0100
 # catalog-license lppl1.3
-# catalog-version 1.0.1a
+# catalog-version 1.1.2a
 Name:		texlive-biblatex-swiss-legal
-Version:	1.0.1a
-Release:	5
+Version:	1.1.2a
+Release:	1
 Summary:	Bibliography and citation styles following Swiss legal practice
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-swiss-legal
@@ -21,9 +21,8 @@ Requires(post):	texlive-kpathsea
 %description
 The package provides biblatex bibliography and citation styles
 for documents written in accordance with Swiss legal citation
-standards. Currently, the package is only usable for French
-documents; translations to German and Italian are under
-development for future versions.
+standards. Currently, the package is usable for French and
+German documents.
 
 %post
     %{_sbindir}/texlive.post
@@ -39,11 +38,14 @@ development for future versions.
 %{_texmfdistdir}/tex/latex/biblatex-swiss-legal/biblatex-swiss-legal-base.cbx
 %{_texmfdistdir}/tex/latex/biblatex-swiss-legal/biblatex-swiss-legal-bibliography.bbx
 %{_texmfdistdir}/tex/latex/biblatex-swiss-legal/biblatex-swiss-legal-bibliography.cbx
+%{_texmfdistdir}/tex/latex/biblatex-swiss-legal/biblatex-swiss-legal-de.lbx
 %{_texmfdistdir}/tex/latex/biblatex-swiss-legal/biblatex-swiss-legal-fr.lbx
 %{_texmfdistdir}/tex/latex/biblatex-swiss-legal/biblatex-swiss-legal-general.bbx
 %{_texmfdistdir}/tex/latex/biblatex-swiss-legal/biblatex-swiss-legal-general.cbx
 %{_texmfdistdir}/tex/latex/biblatex-swiss-legal/biblatex-swiss-legal-longarticle.bbx
 %{_texmfdistdir}/tex/latex/biblatex-swiss-legal/biblatex-swiss-legal-longarticle.cbx
+%{_texmfdistdir}/tex/latex/biblatex-swiss-legal/biblatex-swiss-legal-shortarticle.bbx
+%{_texmfdistdir}/tex/latex/biblatex-swiss-legal/biblatex-swiss-legal-shortarticle.cbx
 %doc %{_texmfdistdir}/doc/latex/biblatex-swiss-legal/README
 %doc %{_texmfdistdir}/doc/latex/biblatex-swiss-legal/biblatex-swiss-legal.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex-swiss-legal/doc_source/biblatex-swiss-legal.bib
