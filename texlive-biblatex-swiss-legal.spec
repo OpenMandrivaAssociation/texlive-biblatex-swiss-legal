@@ -6,7 +6,7 @@
 # catalog-version 1.1.2a
 Name:		texlive-biblatex-swiss-legal
 Version:	1.1.2a
-Release:	3
+Release:	4
 Summary:	Bibliography and citation styles following Swiss legal practice
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-swiss-legal
