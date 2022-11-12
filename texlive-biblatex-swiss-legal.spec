@@ -1,18 +1,12 @@
-# revision 32750
-# category Package
-# catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-swiss-legal
-# catalog-date 2014-01-21 12:42:17 +0100
-# catalog-license lppl1.3
-# catalog-version 1.1.2a
 Name:		texlive-biblatex-swiss-legal
-Version:	1.1.2a
-Release:	7
+Version:	64491
+Release:	1
 Summary:	Bibliography and citation styles following Swiss legal practice
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-swiss-legal
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-swiss-legal.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-swiss-legal.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-swiss-legal.r64491.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-swiss-legal.doc.r64491.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ standards. Currently, the package is usable for French and
 German documents.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -53,7 +47,7 @@ German documents.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
